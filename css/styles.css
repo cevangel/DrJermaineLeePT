@@ -5028,6 +5028,11 @@ footer a:hover {
   width: 0px;
   background: #ffffff;
 }
+
+.MBE {
+  width: 200px;
+  margin-top: 20px;
+}
 /***********************************************************************************************/
 /* 13. SIDEBAR & WIDGETS */
 /***********************************************************************************************/
@@ -5461,11 +5466,9 @@ footer a:hover {
   }
   .section-banner {
     padding: 150px 0px;
-    background-image: url('https://media.istockphoto.com/id/952643772/photo/therapist-treating-injured-knee-of-athlete-male-patient.jpg?s=1024x1024&w=is&k=20&c=LORtU87SRiC5tH_41aE6oMrmjRhgRKpBtiUn80ynUlo=');
   }
   .section-banner .banner-content {
     clear: both;
-    background-image: url('https://media.istockphoto.com/id/952643772/photo/therapist-treating-injured-knee-of-athlete-male-patient.jpg?s=1024x1024&w=is&k=20&c=LORtU87SRiC5tH_41aE6oMrmjRhgRKpBtiUn80ynUlo=');
   }
   .section-banner .banner-content a {
     margin-top: 0;

@@ -5394,6 +5394,10 @@ footer a:hover {
   .navbar-default .navbar-toggle span.icon-bar {
     height: 1px;
   }
+
+  .navbar-toggle{
+    color: white;
+  }
   .navbar-default .navbar-right {
     float: none;
     padding: 0;

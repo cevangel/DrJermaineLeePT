@@ -168,6 +168,44 @@ input,
 select {
   vertical-align: middle;
 }
+/* changes 4.6.2025*/
+/* Flex container for menu button and logo */
+.fbone-col-logo .d-flex {
+  display: flex;
+  align-items: center;
+}
+
+/* Menu button styling */
+.menu-button {
+  height: 48px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  color: black;
+  background-color: white;
+  border: 1px solid #ccc;
+  margin-right: 10px; /* Adjust spacing between button and logo */
+}
+
+/* Logo styling */
+.logo {
+  height: 48px;
+}
+@media (max-width: 768px) {
+  .fbone-col-logo .d-flex {
+      justify-content: flex-start;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-button {
+      display: none;
+  }
+}
+
+
+
+
 /* Remove margins for navigation lists */
 nav ul,
 nav li {

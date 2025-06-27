@@ -2376,8 +2376,8 @@ header.one-page .navbar-nav > li > a span {
   -moz-background-clip: padding;
   background-clip: padding-box;
   box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.2);
-  border: 3px solid #dca77f;
-  color: #dca77f;
+  border: 3px solid #396876; /*changed color from #dca77f*/
+  color: #396876; /*changed color from #dca77f*/
   display: block;
   margin: 40px auto 48px auto;
   padding: 25px;
@@ -4640,7 +4640,7 @@ ul.pagination li:last-child {
   transition: all 0.5s ease 0s;
 }
 .service-layout-1 .read-more:hover {
-  background: #dca77f;
+  background: #396876;/*changed color from #dca77f*/
   text-decoration: none;
 }
 .service-layout-1.middle .service-content {
@@ -4966,7 +4966,7 @@ footer a:hover {
   text-align: center;
   width: 12px;
   height: 12px;
-  color: #dca77f;
+  color: #396876; /*changed color from #dca77f*/
   padding: 4px 6px 6px 0;
   margin-right: 6px;
 }
@@ -4978,7 +4978,7 @@ footer a:hover {
   text-align: center;
   width: 12px;
   height: 12px;
-  color: #dca77f;
+  color: #396876; /*changed color from #dca77f*/
   padding: 6px 6px 6px 0;
   margin-right: 6px;
   position: absolute;

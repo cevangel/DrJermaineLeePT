@@ -172,49 +172,23 @@
 
                         <div class="appointment-form-wrapper text-center clearfix">
                             <h3 class="join-heading">Request Appointment</h3>
-                            <form class="appoinment-form" action="mailto:jl3592@yahoo.com" method="post" enctype="text/plain"> 
-                                <div class="form-group col-md-6">
-                                    <input id="user_name" name="user_name" class="form-control" placeholder="Name" type="text">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <input id="user_email" name="user_email" class="form-control" placeholder="Email" type="email">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <input id="user_phone" name="user_phone" class="form-control" placeholder="Phone" type="text">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <div class="select-style">                                    
-                                        <select class="form-control" id="user_service" name="user_service">
-                                            <option>What do you need help with?</option>
-                                            <option>Neck Pain</option>
-                                            <option>Back Pain</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="form-group col-md-6">
-                                    <input id="appoinment_date" name="appoinment_date" class="form-control" placeholder="Preferred Date" type="text">
-                                </div>
-
-
-                                <div class="form-group col-md-6">
-                                    <input id="appoinment_time" name="appoinment_time" class="form-control" placeholder="Preferred Time" type="text">
-                                </div>
-
+                            <div class="appoinment-form">
+                                <p class="text-muted" style="margin-top: 0.5em;">
+                                    Call or text us to request an appointment, or email us for general questions.
+                                </p>
                                 <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                    <textarea id="user_message" name="user_message" class="form-control" rows="4" placeholder="Briefly describe what you need help with (injury, pain, goals)..."></textarea>
-                                </div>                                                          
-
-                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                    <button id="btn_submit" name="btn_submit" class="btn-submit" type="submit">Get Appointment</button>
+                                    <a href="tel:+15164253985" class="btn-submit" style="display:inline-block; text-decoration:none;">Call/Text to Request Appointment</a>
                                 </div>
-
-                                <p class="text-muted" style="margin-top: 1em; font-size: 0.95em;">New patients: speed up your first visit by completing our intake form.</p>
                                 <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                    <!-- Replace # with client's Google Form URL (New Patient Intake) -->
-                                    <a href="#" id="intake-form-link" class="btn btn-default" style="border: 1px solid #ddd;" target="_blank" rel="noopener">Complete New Patient Intake Form</a>
+                                    <a href="mailto:jl3592@yahoo.com?subject=General%20Question%20-%20Jermaine%20Lee%20PT" class="btn btn-default" style="border: 1px solid #ddd;">Email for General Questions</a>
                                 </div>
-                            </form>
+                                <p class="text-muted" style="margin-top: 1em; font-size: 0.95em;">
+                                    Please do not send sensitive medical information by email or web forms.
+                                </p>
+                                <p class="text-muted" style="font-size: 0.95em;">
+                                    Office hours: Mon-Fri 8:00 AM-6:00 PM. We usually respond within 1 business day.
+                                </p>
+                            </div>
 
                         </div> <!-- end .appointment-form-wrapper  -->
 
@@ -396,7 +370,7 @@
 
                                         <i class="fa fa-location-arrow fa-contact"></i> <p>Serving Long Island & New York City<br/>By appointment — home care</p>
 
-                                        <i class="fa fa-phone fa-contact"></i> <p>Office:&nbsp; (516)-425-3985</p> 
+                                        <i class="fa fa-phone fa-contact"></i> <p><a href="tel:+15164253985">Call/Text:&nbsp; (516)-425-3985</a></p> 
                                     </div>
 
                                 </div> <!-- end .footer-widget-wrapper  -->

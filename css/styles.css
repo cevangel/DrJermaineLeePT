@@ -1758,8 +1758,12 @@ header.one-page .navbar-nav > li > a span {
   position: relative;
   overflow: hidden;
 }
-.section-banner .banner-content img{
-  height: 500px;
+.section-banner .banner-content img {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto;
 }
 .section-banner .banner-content {
   text-align: center;
@@ -1830,6 +1834,43 @@ header.one-page .navbar-nav > li > a span {
   background: #cb7d43;
   border: 2px solid #396876;
   color: #ffffff;
+}
+
+/* Mobile responsiveness fixes for header and hero */
+@media (max-width: 767px) {
+  .fbone-col-logo .d-flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .menu-button {
+    flex: 0 0 auto;
+    margin-right: 8px;
+  }
+
+  .logo {
+    flex: 1 1 auto;
+    min-width: 0;
+    width: auto;
+    max-width: calc(100% - 96px);
+    height: auto;
+    max-height: 44px;
+    margin-top: 0;
+  }
+
+  .fbone-header-top {
+    padding-bottom: 0;
+  }
+
+  .section-banner .banner-content img {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+  }
 }
 .section-home-blog {
   clear: both;
@@ -6244,6 +6285,117 @@ footer a:hover {
   .xs-margin {
     margin-left: 120px;
     margin-right: 120px;
+  }
+}
+
+/* Final mobile overrides to prevent header/logo and hero image squeeze */
+@media only screen and (max-width: 767px) {
+  .fbone-col-logo .d-flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .menu-button {
+    flex: 0 0 auto;
+    margin-right: 8px;
+  }
+
+  .logo {
+    flex: 1 1 auto;
+    min-width: 0;
+    width: auto !important;
+    max-width: calc(100% - 96px);
+    height: auto !important;
+    max-height: 44px;
+    margin-top: 0;
+  }
+
+  .fbone-header-top {
+    padding-bottom: 0;
+  }
+
+  .section-banner {
+    padding: 0;
+  }
+
+  .section-banner .banner-content img {
+    display: block;
+    width: 100%;
+    max-width: 340px;
+    height: auto !important;
+    margin: 0 auto;
+  }
+
+  .section-banner .banner-content h2 {
+    font-size: 42px;
+    line-height: 50px;
+    margin-top: 14px;
+  }
+
+  .section-banner .banner-content h3 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .section-highlights .highlight-block {
+    margin: 12px 0;
+    padding: 16px;
+  }
+
+  .section-content-block {
+    padding: 28px 0;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .menu-button {
+    height: 42px;
+    padding: 0 10px;
+    font-size: 24px;
+  }
+
+  .logo {
+    max-width: calc(100% - 86px);
+    max-height: 38px;
+  }
+
+  .section-banner .banner-content img {
+    max-width: 300px;
+  }
+
+  .section-banner .banner-content h2 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .menu-button {
+    margin-right: 6px;
+    padding: 0 8px;
+    font-size: 20px;
+  }
+
+  .logo {
+    max-width: calc(100% - 78px);
+    max-height: 34px;
+  }
+
+  .section-banner .banner-content img {
+    max-width: 270px;
+  }
+
+  .section-banner .banner-content h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .section-content-block {
+    padding: 24px 0;
   }
 }
 

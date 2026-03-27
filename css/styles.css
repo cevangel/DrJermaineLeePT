@@ -1758,7 +1758,8 @@ header.one-page .navbar-nav > li > a span {
   position: relative;
   overflow: hidden;
 }
-.section-banner .banner-content img {
+.section-banner .banner-content img,
+.section-banner .banner-content #hero-logo {
   display: block;
   width: 100%;
   max-width: 500px;
@@ -1836,42 +1837,6 @@ header.one-page .navbar-nav > li > a span {
   color: #ffffff;
 }
 
-/* Mobile responsiveness fixes for header and hero */
-@media (max-width: 767px) {
-  .fbone-col-logo .d-flex {
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    width: 100%;
-    min-width: 0;
-    overflow: hidden;
-  }
-
-  .menu-button {
-    flex: 0 0 auto;
-    margin-right: 8px;
-  }
-
-  .logo {
-    flex: 1 1 auto;
-    min-width: 0;
-    width: auto;
-    max-width: calc(100% - 96px);
-    height: auto;
-    max-height: 44px;
-    margin-top: 0;
-  }
-
-  .fbone-header-top {
-    padding-bottom: 0;
-  }
-
-  .section-banner .banner-content img {
-    width: 100%;
-    max-width: 340px;
-    height: auto;
-  }
-}
 .section-home-blog {
   clear: both;
 }
@@ -6288,7 +6253,7 @@ footer a:hover {
   }
 }
 
-/* Final mobile overrides to prevent header/logo and hero image squeeze */
+/* Mobile: header logo + hero (reviewer suggestions: logo max-width 65%, hero #hero-logo 70%, banner padding 30px 0) */
 @media only screen and (max-width: 767px) {
   .fbone-col-logo .d-flex {
     display: flex;
@@ -6304,13 +6269,13 @@ footer a:hover {
     margin-right: 8px;
   }
 
+  /* No fixed header logo height on small screens; cap width so menu + logo share the row */
   .logo {
     flex: 1 1 auto;
     min-width: 0;
-    width: auto !important;
-    max-width: calc(100% - 96px);
-    height: auto !important;
-    max-height: 44px;
+    max-width: 65%;
+    width: auto;
+    height: auto;
     margin-top: 0;
   }
 
@@ -6319,14 +6284,15 @@ footer a:hover {
   }
 
   .section-banner {
-    padding: 0;
+    padding: 30px 0;
   }
 
-  .section-banner .banner-content img {
+  /* Target only the hero graphic, not every img on the page */
+  #hero-logo {
     display: block;
-    width: 100%;
-    max-width: 340px;
-    height: auto !important;
+    max-width: 70%;
+    width: auto;
+    height: auto;
     margin: 0 auto;
   }
 
@@ -6359,12 +6325,11 @@ footer a:hover {
   }
 
   .logo {
-    max-width: calc(100% - 86px);
-    max-height: 38px;
+    max-width: 65%;
   }
 
-  .section-banner .banner-content img {
-    max-width: 300px;
+  #hero-logo {
+    max-width: 70%;
   }
 
   .section-banner .banner-content h2 {
@@ -6381,12 +6346,11 @@ footer a:hover {
   }
 
   .logo {
-    max-width: calc(100% - 78px);
-    max-height: 34px;
+    max-width: 58%;
   }
 
-  .section-banner .banner-content img {
-    max-width: 270px;
+  #hero-logo {
+    max-width: 75%;
   }
 
   .section-banner .banner-content h2 {

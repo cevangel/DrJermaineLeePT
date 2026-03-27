@@ -1465,7 +1465,7 @@ header.one-page .navbar-nav > li > a span {
   color: #ffffff;
 }
 .section-content-block {
-  padding: 70px 0 70px 0;
+  padding: 20px 0 20px 0;
   background: #ffffff;
 }
 .section-pure-white-bg {
@@ -5614,7 +5614,7 @@ footer a:hover {
     float: none;
   }
   .section-content-block {
-    padding: 60px 0;
+    padding: 20px 0;
   }
   .section-heading {
     font-size: 24px;

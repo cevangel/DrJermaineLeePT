@@ -1490,6 +1490,7 @@ header.one-page .navbar-nav > li > a span {
   position: relative;
   text-transform: uppercase;
 }
+
 .section-heading-wrapper h2::after {
   background-image: url("../images/separator.png");
   background-position: center center;
@@ -4596,7 +4597,7 @@ ul.pagination li:last-child {
   position: relative;
   background: #ffffff;
   color: #333333;
-  padding: 28px;
+  padding: 10px;
 }
 .service-layout-1 .service-icon {
   display: block;
@@ -4643,7 +4644,7 @@ ul.pagination li:last-child {
   text-decoration: none;
 }
 .service-layout-1.middle .service-content {
-  padding: 28px;
+  padding: 10px;
 }
 .service-layout-1.middle .service-icon {
   bottom: -35px;
